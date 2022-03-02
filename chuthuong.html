@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập đoạn văn bản: ");
+    let arr = str.split('');
+    console.log("ktra mảng: ",arr)
+    for (i=0;i<arr.length;i++){
+        if (arr[i] === arr[i].toUpperCase()){
+            arr[i]=arr[i].toLowerCase();
+            console.log('ktra lại',arr)
+        }else {arr[i]=arr[i].toUpperCase()}
+    }
+    document.write(arr.join(""));
+</script>
+</body>
+</html>
